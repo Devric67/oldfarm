@@ -1,136 +1,76 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="30">
-    <author>GnG Maps</author>
-    <version>2</version>
+	<author>Devric</author>
+	<version>1</version>
 
-    <title>
-        <en>Old Family Farm 2017</en>
-        <de>Old Family Farm 2017</de>
-    </title>
+	<title>
+		<en>Old Family Farm</en>
+	</title>
 
-    <description>
-        <en>Welcome to the Old Family Farm. Your Grandpa is getting up there in age and has moved on, so he left you his farm. Do you have what it takes to get things in order?</en>
-        <de>Willkommen auf der Alten Familienfarm. Dein Grosvater ist im Alter aufgestanden und ist weitergezogen, also hat er dir seine Farm hinterlassen. Hast du das Zeug dazu, die Dinge in Ordnung zu bringen?</de>
-    </description>
+	<description>
+		<en>Welcome to the Old Family Farm. Your Grandpa is getting up there in age and has moved on, so he left you his farm. Do you have what it takes to get things in order?</en>
+	</description>
 
-    <iconFilename>icon.png</iconFilename>
-    <multiplayer supported="true"/>
+	<iconFilename>icon.png</iconFilename>
+	<multiplayer supported="true"/>
 	
 	<extraSourceFiles>		
 		<sourceFile filename="scripts/FabrikScript.lua" /> 
 		<sourceFile filename="scripts/AdditionalTriggers.lua" />
-        <sourceFile filename="scripts/WaterTroughAddon.lua" />	
-        <sourceFile filename="scripts/grazingArea.lua" />
-    	<sourceFile filename="scripts/grazingManager.lua" />
-        <sourceFile filename="scripts/StableManureArea.lua" /> 
-        <sourceFile filename="scripts/AnimalPedestrian.lua" />
-        <sourceFile filename="maps/scripts/ChangedFunctions.lua" />
-    	<sourceFile filename="maps/scripts/trafficManager.lua" />	
+		<sourceFile filename="scripts/WaterTroughAddon.lua" />	
+		<sourceFile filename="scripts/grazingArea.lua" />
+		<sourceFile filename="scripts/grazingManager.lua" />
+		<sourceFile filename="scripts/StableManureArea.lua" /> 
+		<sourceFile filename="scripts/AnimalPedestrian.lua" />
+		<sourceFile filename="maps/scripts/ChangedFunctions.lua" />
+		<sourceFile filename="maps/scripts/trafficManager.lua" />	
 	</extraSourceFiles>
 	
 	<l10n>		
-		 <text name="AdditionalTrigger_helpBoxTextInfo"><de>Info: Aussteigen, um automatisches Aufladen an/aus zu stellen!</de><en>Info: Get out for set automatic charging!</en></text>
-        <text name="AdditionalTrigger_helpBoxTextAuto"><de>Aktuelle Einstellung: automatisches Aufladen</de><en>Aktual settings: automatic charging</en></text>
-        <text name="AdditionalTrigger_helpBoxTextManual"><de>Aktuelle Einstellung: manuelles Aufladen</de><en>Aktual settings: manual charging</en></text>
-        <text name="Input1_HS"><de>Häckselgut, Grass</de><en>chaff, grass</en></text>
-        <text name="Output1_HS"><de>Silage</de><en>silage</en></text>
-        <text name="leer"> <en>empty</en> <de><![CDATA[leer]]></de> </text>
-        <text name="voll"> <en>full</en> <de><![CDATA[voll]]></de> </text>
-        <text name="ERROR"> <en>Info: </en> <de><![CDATA[Info: ]]></de> </text>
-        <text name="Rohstoffe"> <en>resources: </en> <de><![CDATA[Rohstoffe: ]]></de> </text>
-        <text name="Produkte"> <en>products: </en> <de><![CDATA[Produkte: ]]></de> </text>
-        <text name="inputTrigger"> <en>resources: </en> <de><![CDATA[Inputs: ]]></de> </text>
-        <text name="outputTrigger"> <en>products: </en> <de><![CDATA[Outputs : ]]></de> </text>
-        <text name="AdditionalTrigger_startFillST"><de>Befüllvorgang starten</de><en>start filling</en></text>
-        <text name="AdditionalTrigger_stopFillST"><de>Befüllvorgang stoppen</de><en>stop filling</en></text>
-        <text name="AdditionalTrigger_automaticFillST"><de>zu automatischem Befüllen wechseln</de><en>to automatic filling</en></text>
-        <text name="AdditionalTrigger_manualFillST"><de>zu manuellem Befüllen wechseln</de><en>to manual filling</en></text>
-        <text name="fermentingsilo"><en>Fermenting silo Fill with grass or chopped material This is then processed into silage in the high silo</en><de> .</de></text>
-		
-		<text name="input_WaterTroughAddon">
-		<en>Fill Water Trough</en>
-		<de>Wassertrog füllen</de>
-		<es>Rellenar bebedero</es>
-		<fr>Remplir la sprue</fr>
-	</text>
-	
-	<text name="wta_InputName">
-		<en>Key R</en>
-		<de>Taste R</de>
-		<es>Tecla R</es>
-		<fr>Touche R</fr>
-	</text>
-	
-	<text name="wta_Maintenance">
-		<en>Animals Water Connection - Maintenance</en>
-		<de>Tiere Wasseranschluss - Wartung</de>
-		<es>Mantenimiento - Conexión Agua Animales</es>
-		<fr>Entretien - Animaux de connexion d'eau</fr>
-	</text>
-	
-	<text name="wta_Purchase">
-		<en>Purchase Water Fill Point</en>
-		<de>Wasserfüllstelle kaufen</de>
-		<es>Punto Compra Sistema de Agua</es>
-		<fr>Système d'approvisionnement en eau par points</fr>
-	</text>
-	
-	<text name="wta_BuildCharge">
-		<en>%s Water Fill Point Construction</en>
-		<de>%s Wasserfüllpunktkonstruktion</de>
-		<es>%s Construcción Punto Recarga de Agua</es>
-		<fr>%s Recharge d'eau de point de construction de</fr>
-	</text>
-	
-	<text name="wta_BuyText">
-		<en>Would you like pay $ %s to install a new pipeline to allow direct filling of the %s water trough?  Maintenance Cost: $ %s per day.</en>
-		<de>Möchten Sie €%s bezahlen, um eine neue Pipeline zu installieren, um das direkte Füllen des %s Wassertanks zu ermöglichen? Wartungskosten: € %s pro Tag.</de>
-		<es>¿Le gustaría pagar %s € por instalar una línea de tubos que permita el relleno directo de %s agua en el bebedero? Coste de Mantenimiento: € %s por día.</es>
-		<fr>Souhaitez-vous payer %s € pour l'installation d'une ligne de tubes permettant le remplissage direct de %s eau dans le breuvage? Coût d'entretien: € %s par jour.</fr>
-	</text>
-	
-	<text name="wta_BoughtText">
-		<en>The local Plumber will arrive at %s to install your new TECH FARM fill system. Installation will be completed at %s</en>
-		<de>Der lokale Klempner wird bei %s ankommen, um Ihr neues TECH FARM Füllsystem zu installieren. Die Installation wird bei %s abgeschlossen</de>
-		<es>El fontanero local llegará a las %s para instalar su nuevo sistema de llenado TECH FARM. Se completará la instalación sobre las %s</es>
-		<fr>Le plombier local arrivera à %s pour installer son nouveau système de remplissage TECH FARM. L'installation sera terminée %s</fr>
-	</text>
-	
-	<text name="wta_StartedBuildText">
-		<en>Construction of your new TECH FARM water filling system has started. Installation will be completed in %s hours.</en>
-		<de>Der Bau Ihres neuen TECH FARM Wasserbefüllsystems hat begonnen. Die Installation wird in %s Stunden abgeschlossen sein.</de>
-		<es>La construcción del nuevo sistema de llenado de agua TECH FARM ha empezado. La instalación se completara en %s horas.</es>
-		<fr>La construction du nouveau système de remplissage d'eau TECH FARM a commencé. L'installation sera complétée dans %s heures.</fr>
-	</text>
-	<text name="GA_SAVE_FAILED">
-            		<en>Failed to save settings for grazingAnimals to your savegame.</en>
-        	</text>
-        	<text name="GA_COW_PASTURE" >
-            		<en>Grass in cow pasture: </en>
-        	</text>
-        	<text name="GA_SHEEP_PASTURE">
-            		<en>Grass in sheep pasture: </en>
-        	</text>
-    </l10n>
+		<text name="AdditionalTrigger_helpBoxTextInfo"><en>Info: Get out to set automatic loading!</en></text>
+		<text name="AdditionalTrigger_helpBoxTextAuto"><en>Current setting: Automatic loading</en></text>
+		<text name="AdditionalTrigger_helpBoxTextManual"><en>Current setting: Manual loading</en></text>
+		<text name="Input1_HS"><en>Chaff, grass</en></text>
+		<text name="Output1_HS"><en>Silage</en></text>
+		<text name="leer"><en>Empty</en></text>
+		<text name="voll"><en>Full</en></text>
+		<text name="ERROR"><en>Info: </en></text>
+		<text name="Rohstoffe"><en>Resources: </en></text>
+		<text name="Produkte"><en>Product: </en></text>
+		<text name="inputTrigger"><en>Resources: </en></text>
+		<text name="outputTrigger"><en>Product: </en></text>
+		<text name="AdditionalTrigger_startFillST"><en>Start filling</en></text>
+		<text name="AdditionalTrigger_stopFillST"><en>Stop filling</en></text>
+		<text name="AdditionalTrigger_automaticFillST"><en>Switch to automatic filling</en></text>
+		<text name="AdditionalTrigger_manualFillST"><en>Switch to manual filling</en></text>
+		<text name="fermentingsilo"><en>Fermenting silo - Fill with grass or chopped material. This is then processed into silage in the high silo</en></text>		
+		<text name="input_WaterTroughAddon"><en>Fill water erough</en></text>		
+		<text name="wta_InputName"><en>R key</en></text>		
+		<text name="wta_Maintenance"><en>Animals Water Connection - Maintenance</en></text>	
+		<text name="wta_Purchase"><en>Purchase Water Fill Point</en></text>		
+		<text name="wta_BuildCharge"><en>%s Water Fill Point Construction</en></text>		
+		<text name="wta_BuyText"><en>Would you like pay $ %s to install a new pipeline to allow direct filling of the %s water trough?  Maintenance Cost: $ %s per day.</en></text>		
+		<text name="wta_BoughtText"><en>The local plumber will arrive at %s to install your new TECH FARM fill system. Installation will be completed at %s</en></text>		
+		<text name="wta_StartedBuildText"><en>Construction of your new TECH FARM water filling system has started. Installation will be completed in %s hours.</en></text>
+		<text name="GA_SAVE_FAILED"><en>Failed to save settings for grazingAnimals to your savegame.</en></text>
+		<text name="GA_COW_PASTURE"><en>Grass in cow pasture: </en></text>
+		<text name="GA_SHEEP_PASTURE"><en>Grass in sheep pasture: </en></text>
+	</l10n>
 	
 	<inputBindings>
-	<input name="WaterTroughAddon" category="ONFOOT" key1="KEY_r" key2="" button="BUTTON_3" device="1" mouse=""/>
-</inputBindings>
-	
-	
+		<input name="WaterTroughAddon" category="ONFOOT" key1="KEY_r" key2="" button="BUTTON_3" device="1" mouse=""/>
+	</inputBindings>
 
-    <maps>
-        <map id="SampleModMap" className="Mission00" filename="$dataS/scripts/missions/mission00.lua" configFilename="maps/map01.xml" defaultVehiclesXMLFilename="defaultVehicles.xml">
-            <title>
-                <en>Old Family Farm 2017</en>
-                <de>Old Family Farm 2017</de>
-            </title>
-            <description>
-                <en>Welcome to the Old Family Farm. Your Grandpa is getting up there in age and has moved on, so he left you his farm. Do you have what it takes to get things in order?</en>
-                <de>Willkommen auf der Alten Familienfarm. Dein Grosvater ist im Alter aufgestanden und ist weitergezogen, also hat er dir seine Farm hinterlassen. Hast du das Zeug dazu, die Dinge in Ordnung zu bringen?</de>
-            </description>
-            <iconFilename>maps/map01_preview.png</iconFilename>
-        </map>
-    </maps>
+	<maps>
+		<map id="SampleModMap" className="Mission00" filename="$dataS/scripts/missions/mission00.lua" configFilename="maps/map01.xml" defaultVehiclesXMLFilename="defaultVehicles.xml">
+			<title>
+				<en>Old Family Farm</en>
+			</title>
+			<description>
+				<en>Welcome to the Old Family Farm. Your Grandpa is getting up there in age and has moved on, so he left you his farm. Do you have what it takes to get things in order?</en>
+			</description>
+			<iconFilename>maps/map01_preview.png</iconFilename>
+		</map>
+	</maps>
 
 </modDesc>
