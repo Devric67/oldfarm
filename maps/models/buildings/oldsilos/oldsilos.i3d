@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="textures/Fruitplane.dds" relativePath="true"/>
+    <File fileId="1" filename="textures/Silos.dds" relativePath="true"/>
+    <File fileId="2" filename="textures/grate.dds" relativePath="true"/>
+    <File fileId="4" filename="textures/pipe01.dds" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Silo_Naklejka2" materialId="99" ambientColor="1 1 1">
+      <Texture fileId="1"/>
+    </Material>
+    <Material name="Material.022" materialId="67" ambientColor="1 1 1" cosPower="50" specularColor="1 1 1">
+      <Texture fileId="4"/>
+    </Material>
+    <Material name="Silo_Naklejka2" materialId="75" ambientColor="1 1 1">
+      <Texture fileId="2"/>
+    </Material>
+    <Material name="kuhlturm1" materialId="112" ambientColor="0.16528 0.16528 0.16528" cosPower="25" specularColor="0.18182 0.18182 0.18182">
+      <Texture fileId="4"/>
+    </Material>
+    <Material name="Material.001" materialId="205" ambientColor="1 1 1">
+      <Texture fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="oldsilos.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="oldfarmsilo" translation="-1.82516 39.8552 -23.2954" scale="1.4 1.4 1.4" clipDistance="500" nodeId="8909">
+      <Shape shapeId="1" name="silo1" static="true" clipDistance="500" nodeId="8910" materialIds="99" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="silo2" static="true" clipDistance="500" nodeId="8911" materialIds="99" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="grate" translation="0 0.250233 0" static="true" clipDistance="500" nodeId="8912" materialIds="75" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="4" name="fruitPlane" translation="-1.05804 1.59894 0" scale="0.285 1 1.25" static="true" nodeId="8913" materialIds="205" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+      <TransformGroup name="pipe" rotation="0 90 0" scale="1.5 1.5 1.5" nodeId="8914">
+        <Shape shapeId="5" name="dachrinne_rohr1" static="true" nodeId="8915" materialIds="67" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="6" name="dachrinne_rohr2" rotation="2.54444e-12 -7.93866e-12 -16.8109" scale="0.1 1 1" static="true" nodeId="8916" materialIds="67" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="7" name="dachrinne_rohr3" rotation="0 90 0" scale="0.085 1 1" static="true" nodeId="8917" materialIds="67" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="8" name="dachrinne_rohr30" rotation="92.821 0.108234 -58.0595" static="true" nodeId="8918" materialIds="67" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="9" name="dachrinne45" rotation="-90 -8.17515e-06 163.882" static="true" nodeId="8919" materialIds="67" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="dachrinne70" rotation="-90 0 -5.26599" static="true" nodeId="8920" materialIds="67" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="11" name="dachrinne90" static="true" nodeId="8921" materialIds="67" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="12" name="dachrinne90" rotation="90 88.979 -4.6947e-06" static="true" nodeId="8922" materialIds="67" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="13" name="dachrinne90" rotation="90 88.979 -4.6947e-06" static="true" nodeId="8923" materialIds="67" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="14" name="dachrinne_rohr1" rotation="3.664e-12 -6.92089e-12 -33.171" scale="0.196476 0.996476 0.996476" static="true" nodeId="8924" materialIds="67" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="15" name="dachrinne90" rotation="-7.43563e-09 0 167.214" static="true" nodeId="8925" materialIds="67" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="16" name="dachrinne90" rotation="-180 5.97814e-07 -16.7467" static="true" nodeId="8926" materialIds="67" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="17" name="dachrinne70" rotation="-90 7.45381e-06 170.929" static="true" nodeId="8927" materialIds="67" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="5" name="dachrinne_rohr1" translation="-1.64 2.37 0.483" rotation="6.92089e-12 -3.33322e-12 -90" scale="0.25 1 1" static="true" nodeId="8928" materialIds="67" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="pipe_bracket" rotation="-90 -30.1032 -90" scale="0.3 0.3 0.3" nodeId="8929">
+        <Shape shapeId="18" name="rohr" rotation="23.1989 90 0" scale="0.05 0.05 0.18" nodeId="8930" materialIds="112" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="19" name="rohr" rotation="-1.52667e-11 2.15069e-11 27.8033" scale="0.05 0.05 0.1" nodeId="8931" materialIds="112" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="20" name="rohr" rotation="-3.78613e-11 1.65898e-11 -2.5391" scale="0.05 0.05 0.1" nodeId="8932" materialIds="112" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="21" name="rohr" rotation="-3.1144e-11 5.33459e-11 30.2814" scale="0.05 0.05 0.15" nodeId="8933" materialIds="112" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="22" name="rohr" rotation="88.744 8.74605e-11 30.2814" scale="0.05 0.05 0.15" nodeId="8934" materialIds="112" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>
